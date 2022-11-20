@@ -52,7 +52,7 @@ public class Dos implements Runnable {
         int attakingAmoun = 0;
         Dos dos = new Dos(0, 0);
         Scanner in = new Scanner(System.in);
-        System.out.print("Nhập địa chỉ web cần attack : ");
+        System.out.print("Nhập địa chỉ web cần attack: ");
         url = in.nextLine();
         System.out.println("\n");
         System.out.println("Bắt Đầu Tấn Công !: " + url);
