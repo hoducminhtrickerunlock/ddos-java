@@ -52,21 +52,21 @@ public class Dos implements Runnable {
         int attakingAmoun = 0;
         Dos dos = new Dos(0, 0);
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter Url: ");
+        System.out.print("Nhập địa chỉ web cần attack : ");
         url = in.nextLine();
         System.out.println("\n");
         System.out.println("Bắt Đầu Tấn Công !: " + url);
 
         String[] SUrl = url.split("://");
 
-        System.out.println("Kiểm Tra Kết Nối Url");
+        System.out.println("kiểm tra máy chủ trang web");
         if (SUrl[0] == "http" || SUrl[0].equals("http")) {
             dos.checkConnection(url);
         } else {
             dos.sslCheckConnection(url);
         }
 
-        System.out.println("Setting DDoS By: tdd2003");
+        System.out.println("Setting DDoS By: hoducminhtrickerunlock");
 
         System.out.print("Thread: ");
         String amount = in.nextLine();
